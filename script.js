@@ -61,6 +61,7 @@ function checkSet() {
 
     if (isSet) {
         alert("Match found!");
+        document.getElementById("clue-image").style.display = "block";
     } else {
         alert("Not a match!");
     }
