@@ -60,7 +60,7 @@ function checkSet() {
     );
 
     if (isSet) {
-        alert("Match found!");
+        alert("Match found! Scroll to the bottom to gain a clue!");
         document.getElementById("clue-image").style.display = "block";
     } else {
         alert("Not a match!");
