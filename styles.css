@@ -31,13 +31,17 @@ body {
 
 #clue-image {
     display: none;
-    width: 500px;
+    opacity: 0;
+    width: 300px;
+    max-width: 80%;
     height: auto;
-    margin-top: 20px;
-    transition: opacity 1s ease-in-out;
+    margin: 20px auto 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: scale(0.8);
+    display: block;
 }
 
 #clue-image.reveal {
-    display: block;
     opacity: 1;
+    transform: scale(1);
 }
