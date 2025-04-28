@@ -28,3 +28,16 @@ body {
     border-color: blue;
     box-shadow: 0 0 10px blue;
 }
+
+#clue-image {
+    display: none;
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    transition: opacity 1s ease-in-out;
+}
+
+#clue-image.reveal {
+    display: block;
+    opacity: 1;
+}
