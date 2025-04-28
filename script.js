@@ -61,7 +61,11 @@ function checkSet() {
 
     if (isSet) {
         alert("Match found! Scroll to the bottom to gain a clue!");
-        document.getElementById("clue-image").style.display = "block";
+        const clueImage = document.getElementById("clue-image");
+        clueImage.style.display = "block";
+        setTimeout(() => {
+            clueImage.classList.add("reveal");
+        }, 10);
     } else {
         alert("Not a match!");
     }
